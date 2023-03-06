@@ -19,8 +19,6 @@ train_data = torchvision.datasets.StanfordCars(root="./data", split="train",
                                                ]))
 loader = torch.utils.data.DataLoader(train_data, batch_size= 64, shuffle=False, num_workers=1)
 
-from torchvision.transforms.functional import rotate
-
 # For stanford cars dataset
 mean = torch.tensor([0.4707, 0.4602, 0.4550])
 std = torch.tensor([0.2638, 0.2629, 0.2678])
