@@ -31,7 +31,7 @@ def train(network, loss, loss_prime, x_train, y_train, x_val=None, y_val=None, e
         if verbose:
             print(f"{e + 1}/{epochs}, error={train_error}")
 
-        train_errors['epochs'].append(e+1)
+        train_errors['epochs'].append(e + 1)
         train_errors['errors'].append(train_error)
 
         if x_val and y_val:
