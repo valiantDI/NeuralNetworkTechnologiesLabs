@@ -1,1 +1,1 @@
-["I-ACT", "I-SOC", "B-SOC", "B-ACT", "B-BIN", "B-MET", "I-INST", "I-QUA", "I-CMP", "I-ECO", "B-QUA", "O", "I-MET", "I-BIN", "B-CMP", "B-ECO", "B-INST"]
+["I-CMP", "B-ACT", "B-CMP", "O", "I-ECO", "B-SOC", "I-SOC", "I-ACT", "I-MET", "B-BIN", "B-ECO", "B-QUA", "I-BIN", "I-INST", "B-INST", "B-MET", "I-QUA"]
