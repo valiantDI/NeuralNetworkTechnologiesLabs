@@ -16,13 +16,8 @@ def train(network, loss, loss_prime, x_train, y_train, x_val=None, y_val=None, e
         train_error = 0
         val_error = 0
         for x, y in zip(x_train, y_train):
-            # forward
             output = predict(network, x)
-
-            # error
             train_error += loss(y, output)
-
-            # backward
             grad = loss_prime(y, output)
             for layer in reversed(network):
                 grad = layer.backward(grad, learning_rate)
@@ -36,10 +31,7 @@ def train(network, loss, loss_prime, x_train, y_train, x_val=None, y_val=None, e
 
         if x_val and y_val:
             for x, y in zip(x_val, y_val):
-                # forward
                 output = predict(network, x)
-
-                # error
                 val_error += loss(y, output)
 
             val_error /= len(x_val)

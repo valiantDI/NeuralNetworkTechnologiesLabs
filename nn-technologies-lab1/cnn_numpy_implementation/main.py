@@ -8,7 +8,7 @@ from linear import Linear
 from convolutional import Convolutional
 from activations import Sigmoid, Softmax
 from reshape import Reshape
-from losses import cross_entropy, cross_entropy_prime
+from losses import cross_entropy, cross_entropy_derivative
 from train import train, predict
 
 
@@ -52,12 +52,14 @@ network = [
     Softmax()
 ]
 
-train_errors, val_errors = train(
+train_errors, test_errors = train(
                                  network,
                                  cross_entropy,
                                  cross_entropy_prime,
                                  x_train,
                                  y_train,
+                                 x_test,
+                                 y_test,
                                  epochs=50,
                                  learning_rate=0.001
                                  )
@@ -75,5 +77,5 @@ print(classification_report(y_true, y_pred))
 with open("train_errors.json", "w") as file:
     json.dump(train_errors, file, indent=2)
 
-with open("val_errors.json", "w") as file:
+with open("test_errors.json", "w") as file:
     json.dump(val_errors, file, indent=2)
