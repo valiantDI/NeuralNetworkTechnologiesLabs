@@ -79,7 +79,7 @@ AdaMax отличается от Adam тем, что вместо дисперс
 Код проекта был протестирован на датасете MNIST.
 
 > Значения функции потерь для 100 эпох обучения:
-> 
+>
 > ![tran_loss.png](cnn_numpy_implementation%2Ftran_loss.png)
 
 ### ResNet PyTorch реализация:
