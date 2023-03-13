@@ -23,7 +23,7 @@
 архитектур. Решением этой проблемы стал "трюк" skip connection. А первой популярной архитектурой, использующей его стала 
 ResNet с Residual Connection блоками. 
 >Рисунок 2 - Residual Connection
-![img_1.png](images/img_1.png)
+>![img_1.png](images/img_1.png)
 
 > Рисунок 3 - Архитектура Resnet
 ![img_3.png](images/img_3.png)
@@ -66,11 +66,12 @@ AdaMax отличается от Adam тем, что вместо дисперс
 В ходе выполнения работы была реализована архитектура ResNet50 с использованием фреймворка для глубокого обучения PyTorch.
 Для обучения сети использовался набор данных "Stanford Cars Dataset".
 Графики функции потерь и целевой метрики для оптимизатора Adam:
-![resnet_50_losses_adam_optimizer.jpg](resnet50_torch_implementation%2Fplots%2Fresnet_50_losses_adam_optimizer.jpg)
-![resnet_50_f1_adam_optimizer.jpg](resnet50_torch_implementation%2Fplots%2Fresnet_50_f1_adam_optimizer.jpg)
-Графики функции потерь и целевой функции для оптимизатора AdaMax:
-![resnet_50_losses_adamax_optimizer.jpg](resnet50_torch_implementation%2Fplots%2Fresnet_50_losses_adamax_optimizer.jpg)
-![resnet_50_f1_adamax_optimizer.jpg](resnet50_torch_implementation%2Fplots%2Fresnet_50_f1_adamax_optimizer.jpg)
+>![resnet_50_losses_adam_optimizer.jpg](resnet50_torch_implementation%2Fplots%2Fresnet_50_losses_adam_optimizer.jpg)
+>![resnet_50_f1_adam_optimizer.jpg](resnet50_torch_implementation%2Fplots%2Fresnet_50_f1_adam_optimizer.jpg)
+
+>Графики функции потерь и целевой функции для оптимизатора AdaMax:
+>![resnet_50_losses_adamax_optimizer.jpg](resnet50_torch_implementation%2Fplots%2Fresnet_50_losses_adamax_optimizer.jpg)
+>![resnet_50_f1_adamax_optimizer.jpg](resnet50_torch_implementation%2Fplots%2Fresnet_50_f1_adamax_optimizer.jpg)
 
 ## Выводы:
 В ходе выполнения работы были получены навыки самостоятельной реализации слоев нейронных сетей, реализации
